@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html{
+    background-image: linear-gradient(to bottom right, rgb(123, 180, 226), rgb(56, 133, 184));
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    background-color: rgb(238, 238, 238);
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.greet{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+#lab{
+    background-color: rgb(82, 160, 184);
+    width: 25%;
+    height: 25%;
+    float: right;
+    text-align: center;
+    font-size:xx-large;
+    position: absolute;
+    top: 180px;
+    right: 20%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#proj{
+    background-color: rgb(82, 160, 184);
+    width: 25%;
+    height: 25%;
+    float: left;
+    text-align: center;
+    font-size:xx-large;
+    position: absolute;
+    top:180px;
+    left: 20%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+}
+
+/*
+#labs{
+    width: 25%;
+    background-color: aquamarine;
+    margin: auto;
+}
+#proj{
+    width: 25%;
+    background-color: olive;
+
+    margin: auto;
+} */
