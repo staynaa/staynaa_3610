@@ -3,62 +3,7 @@
 
 <head>
     <title>Bar Graph</title>
-    <script>
-        function draw() {
-            const canvas = document.getElementById("page");
-            const ctx = canvas.getContext("2d");
-
-            var fruit = [
-                { "name": "Strawberry", "quantity": 15, "color": "red" },
-                { "name": "Peach", "quantity": 10, "color": "orange" },
-                { "name": "Banana", "quantity": 25, "color": "yellow" },
-                { "name": "Pear", "quantity": 10, "color": "green" },
-                { "name": "Grape", "quantity": 20, "color": "purple" },
-            ];
-            /*(0,0) w:15 h:50
-            (0,50) w:10 h:50 ...
-            */          
-           //verticle line of graph 
-            ctx.beginPath();
-            ctx.moveTo(100, 0);
-            ctx.lineTo(100, 250);
-            ctx.closePath();
-            ctx.stroke();
-            //horrizontal line of graph
-            ctx.beginPath();
-            ctx.moveTo(100, 250);
-            ctx.lineTo(250, 250);
-            ctx.closePath();
-            ctx.stroke();
-
-            //console.log(fruit[0].color);
-            //loop through json array:
-            for (let i = 0; i < fruit.length; i++) {
-                ctx.font = "20px serif";
-                ctx.fillStyle = "black";
-                ctx.textBaseline = "hanging";
-                ctx.fillText(fruit[i].name, 0, (50 * i))
-
-                ctx.fillStyle = fruit[i].color;
-                ctx.fillRect(101, (50 * i), fruit[i].quantity, 50);
-                ctx.strokeStyle = "black";
-                ctx.strokeRect(101, (50 * i), fruit[i].quantity, 50)
-                ctx.lineWidith = 5;
-            }
-            //mini lines: by 10s
-            for (let i = 0; i <= 15; i++) {
-                ctx.beginPath();
-                ctx.moveTo(100 + (10 * i), 250);
-                ctx.lineTo(100 + (10 * i), 260)
-                ctx.closePath();
-                ctx.stroke();
-            }
-            ctx.font = "20px serif";
-            ctx.fillStyle = "black";
-            ctx.textBaseline = "hanging";
-            ctx.fillText("Stayna Alexandre; CISC 3610 LAB1", 200, 300);
-        }
-    </script>
+    <script src="lab1.js"></script>
     <style>
         canvas {
             border: 1px solid black;
@@ -67,7 +12,7 @@
 </head>
 
 <body onload="draw();">
-    <canvas id="page" width="500" height="350"></canvas>
+    <canvas id="page" width="1200" height="700"></canvas>
 </body>
 <body>
     <a href="../index.html">Back to main page </a>
