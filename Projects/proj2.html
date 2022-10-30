@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+    <script src="proj2.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="name"><b>Full Name:</b></label>
+            <input type="text" id="fname" name="fname" onchange="draw();">
+        </p>
+        <p>
+            <label for="Bcolor"><b>Select Background Color: </b></label>
+            <input type="color" id="Bcolor" name="Bcolor" value="#ffffff" onchange="draw();">
+        </p>
+        <p>
+            <label for="Tcolor"><b>Select Text Color: </b></label>
+            <input type="color" id="Tcolor" name="Tcolor" value="#000000" onchange="draw();">
+        </p>
+        <p>
+            <label for="Tsize"><b>Select Text Size (12px-60px) </b></label>
+            <input type="range" id="Tsize" name="Tsize" min="12" max="60" value="12" onchange="draw();">
+
+        </p>
+        <p><b>Select Font: </b></p>
+        <div id=font>
+            <input type="radio" id="arial" name="Fchoice" onchange="draw('Arial');">
+            <label for="arial"><b>Arial</b></label>
+            <input type="radio" id="brmt" name="Fchoice" onchange="draw('Brush Script MT');">
+            <label for="tnr"><b>Brush Script MT</b></label>
+            <input type="radio" id="courier" name="Fchoice" onchange="draw('Courier');">
+            <label for="courier"><b>Courier</b></label>
+
+        </div>
+
+        <p>
+            <input type="reset" id="reset">
+        </p>
+    </form>
+    <p id="output"></p>
+</body>
+
+<body onload="draw();">
+    <canvas id="canvas" width="700" height="500"></canvas>
+    <p><a href="../index.html">back to main page</p>
+</body>
+</html>
