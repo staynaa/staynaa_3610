@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Projects</title>
+
     <link href="style.css" rel="stylesheet">
+    <link href="grid.css" rel="stylesheet">
 
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="in.js"></script>
@@ -59,8 +61,8 @@
                 </a>
             </li>
 
-            <li class="item" onclick="myFunc()">
-                <a href="#" class="navlink">
+            <li class="item">
+                <a href="#" class="navlink" onclick="myFunc()">
                     <svg onclick="dark()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                         <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                         <path
@@ -72,8 +74,22 @@
         </ul>
     </nav>
     <main id="swup" class="transition-fade">
-        <h1 id="greet">Welcome</h1>
-        <h2 id="classTitle">CISC 3610 Intro Multimedia Programming</h2>
+        <h1 class="heading">Projects</h1>
+        <div id="notify"><p>Assignments will open in new window</p></div>
+        <div class="container">
+            <a href="/Projects/proj1.html" class="assiLink">
+                <div class="box">Cartoon</div>
+            </a>
+            <a href="Projects/animation/animationProj.html" class="assiLink">
+                 <div class="box">Animation</div>
+            </a>
+            <a href="/Projects/proj2.html" class="assiLink">
+                <div class="box">Text Form</div>
+            </a>
+
+            <div class="soon">Speech Recognition</div>
+            <div class="soon">Data Visualization</div>
+        </div>
     </main>
 </body>
 

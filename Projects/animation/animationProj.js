@@ -129,7 +129,7 @@ function draw() {
 
   function step() {
     frameC++;
-    if (frameC < 31) {
+    if (frameC < 20) { //speed frames
       window.requestAnimationFrame(step);
       return;
     }
