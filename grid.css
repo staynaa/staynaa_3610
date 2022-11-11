@@ -17,7 +17,7 @@
     text-align: center;
     color: whitesmoke;
 }
-.assilink .box:hover{
+.box:hover{
     filter: grayscale(100%) opacity(0.4);
     cursor: pointer;
 }
