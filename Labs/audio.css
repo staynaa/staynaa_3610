@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+body{
+    background-color: #01a37b;
+}
+h1{
+    /*float: left; to align next to the logo*/
+    width: 100%;
+    margin-top: -35px;
+    font-size: 36px;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+}
+#logo{
+    text-align: center;
+}
+img{ /*this is the logo*/
+    width:200px;
+    height: auto;
+
+}
+.sounds{
+    margin-right: 50px;
+    float:left;
+}
+.sounds img{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#machine{
+    text-align: center;
+    margin-left: 100px;
+}
+span{
+    color: white;
+}
+li{
+    list-style: none;
+    float: left;
+    margin-top: -10px;
+    margin-left: -40px;
+    margin-bottom: 40px;
+}
+.material-symbols-outlined.md-36{
+    font-size: 36px;
+}
+/*#00b488*/
+.sounds img:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+span:hover{
+    color:#00b488;
+    cursor: pointer;
+}
+.bottom{
+    margin-top: 520px;
+}
+.bottom p{
+    float: lwft;
+    text-decoration: underline;
+    color:#6cccb4;
+}
+.bottom a{
+    color:white;
+    float: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom a:hover{
+    color:#00b488;
+    text-decoration: underline;
+}

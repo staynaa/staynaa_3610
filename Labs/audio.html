@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="audio.js"></script>
+    <link rel="stylesheet" href="audio.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vine Sound Machine</title>
+</head>
+
+<body>
+    <audio id="swimAudio"><source src="sounds/I can't swim Vine.mp3" type="audio/mpeg"></audio>
+    <audio id="avocadoAudio"><source src="sounds/It's an Avocado !.mp3" type="audio/mpeg"></audio>
+    <audio id="croissantAudio"><source src="sounds/I Could've Dropped My Croissant (Vine).mp3" type="audio/mpeg"></audio>
+    <audio id="ohnahAudio"><source src="sounds/Oh hell nah VINE.mp3" type="audio/mpeg"></audio>
+    <audio id="lebronAudio"><source src="sounds/Lebron James Vine.mp3" type="audio/mpeg"></audio>
+
+    <div id="logo">
+        <img src="pics/vinelogo.webp" alt="vine logo">
+    </div>
+    <h1>Sound Machine</h1>
+    <div id="machine">
+        <div id="swim" class="sounds">
+            <img src="pics/cantswim.jpeg">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined md-36" id="play" onclick="playing('swim')">play_circle</span>
+                    <span class="material-symbols-outlined md-36" id="pause" onclick="paused('swim')">pause_circle</span>
+                </li>
+            </ul>
+        </div>
+        <div id="avocado" class="sounds">
+            <img src="pics/avocadothx.webp">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined md-36" id="play" onclick="playing('avocado')">play_circle</span>
+                    <span class="material-symbols-outlined md-36" id="pause" onclick="paused('avocado')">pause_circle</span>
+                </li>
+            </ul>
+        </div>
+        <div id="croissant" class="sounds">
+            <img src="pics/croissant.jpeg">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined md-36" id="play" onclick="playing('croissant')">play_circle</span>
+                    <span class="material-symbols-outlined md-36" is="pause" onclick="paused('croissant')">pause_circle</span>
+                </li>
+            </ul>
+        </div>
+        <div id="ohnah" class="sounds">
+            <img src="pics/ohnah.jpeg">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined md-36" id="play" onclick="playing('ohnah')">play_circle</span>
+                    <span class="material-symbols-outlined md-36" id="pause" onclick="paused('ohnah')">pause_circle</span>
+                </li>
+            </ul>
+        </div>
+        <div id="lebron" class="sounds">
+            <img src="pics/lebron.jpeg">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined md-36" id="play" onclick="playing('lebron')">play_circle</span>
+                    <span class="material-symbols-outlined md-36" id="pause" onclick="paused('lebron')">pause_circle</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>All audios and images used for this assignment can be found on Youtube by the rightful owners</p>
+        <a href="../labs.html">BACK</a>
+    </div>
+</body>
+
+</html>
