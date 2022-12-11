@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="data.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="data.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+</head>
+
+<body onload="draw();">
+    <div class="text">
+        <h1>Shooting Incident Data per NYC Borough:</h1>
+        <p>
+            This line graph displays the amount of shooting incidents reported from 2011 to 2021.<br/>
+            The pie chart shows the amount of deaths that resulted from these incidents.
+        </p>
+    </div>
+    <div id="line">
+        <canvas id="line-chart" width="500" height="450"></canvas>
+    </div>
+    <div id="pie">
+        <canvas id="pie-chart" width="500" height="450"></canvas>
+    </div>
+</body>
+<footer>
+    <p>The <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8/data" id="link" target="_blank">NYC Shooting Data</a> used for this assignment</p>
+    <a href="../proj.html" id="back">BACK</a>
+</footer>
+
+</html>

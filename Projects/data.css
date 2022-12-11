@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{
+    background-color: rgb(228, 228, 228);
+}
+#line{ /*positions and sizes the graph*/
+    position:absolute;
+    top:120px; 
+    left:100px; 
+    width:570px; 
+}
+#pie{ /*positions and sizes the graph*/
+    position:absolute;
+    top:120px; 
+    right:100px; 
+    width:570px; 
+}
+.text, p{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #f1a6ff;
+}
+footer{
+    border-top: 2px solid black;
+    margin-top: 550px;
+}
+#back{
+    margin-top: 17px;
+    margin-right: 30px;
+    float:right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer p{
+    float: left;
+    margin-left: 30px;
+}
