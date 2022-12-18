@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+body{
+    background: rgb(34,195,189);
+    background: linear-gradient(0deg, rgba(34,195,189,1) 0%, rgba(253,205,45,1) 100%);
+}
+/*LAYOUT*/
+.topnav {
+    grid-area: nav;
+}
+
+.header {
+    grid-area: header;
+}
+.image{
+    grid-area:image;
+}
+.contact {
+    grid-area: contact;
+}
+.skills{
+    grid-area: skills;
+}
+.awards{
+    grid-area: awards;
+}
+.summary{
+    grid-area: summary;
+}
+.main {
+    grid-area: main;
+}
+.showcase{
+    grid-area: showcase;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'header header header header header header'
+        'image summary summary summary summary summary'
+        'contact main main main main main'
+        'skills main main main main main'
+        'awards main main main main main'
+        'showcase showcase showcase showcase showcase showcase';
+    gap: 10px;
+    padding: 10px;
+}
+.layout >div {
+    font-size: 30px;
+    border: 2px rgb(255, 255, 255) solid;
+}
+/*rest of style*/
+.topnav {
+    background-color: rgb(34,195,189);
+    overflow: hidden;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky; /*safari*/
+}
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Secular One', sans-serif;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgba(253,205,45,1);
+    color: rgb(34,195,189);
+}
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+    float: right;
+    background-color: #fce519;
+    color: rgb(36, 120, 141);
+}
+/*image styling*/
+.image img{
+    width: 200px;
+    height: auto;
+    padding-top: 30px;
+}
+.image{
+    background-image: url("/Labs/pics/kitchen.jpeg") ;
+    background-size: cover;
+    text-align: center;
+}
+.header{
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 241, 45);
+    text-align: center;
+    background-image: url("/Labs/pics/flower.jpeg");
+}
+.contact, .skills, .awards{
+    color: white;
+}
+.contact p, .skills li, .summary p, .awards li{
+    font-size: 16px; 
+    color: white;
+}
+.contact h2, .skills h2, .awards h2{
+    font-size: medium;
+}
+.main{
+    padding-right: 20px;
+    color: white;
+}
+.main li{
+    font-size: 20px;
+}
+.duration{
+    float: right;
+    color: rgb(76, 98, 107);
+}
+.main h3, .summary h3, .showcase h3{
+    color:rgb(255, 241, 45);
+}
+.main, .contact, .awards, .skills, .summary, .showcase{
+    font-family: 'Secular One', sans-serif;
+    padding-left: 10px;
+}
+.showcase{
+    text-align: center;
+}
+#box{
+    border: #fce519 2px solid;
+    margin-left: 300px;
+    margin-right: 300px;
+}
